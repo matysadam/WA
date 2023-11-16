@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="cs">
+  <head>
+    <title>Evidence milenek</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      header {
+        background-color: #181818;
+        text-align: center;
+        padding: 10px;
+      }
+      h1 {
+        margin: 0;
+        font-size: 100px;
+        color: pink;
+      }
+
+      h2 {
+        margin: 10px;
+        font-size: 30px;
+      }
+      .containerForm {
+        max-width: 1000px;
+        margin: 20px auto;
+        padding: 20px;
+        background-color: pink;
+        border-radius: 15px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+      }
+
+      .containerSubmit {
+        max-width: 1000px;
+        margin: 20px auto;
+        padding: 20px;
+        background-color: pink;
+        border-radius: 15px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        text-align: center;
+      }
+
+      .submit_button {
+        text-align: center;
+        vertical-align: middle;
+        cursor: crosshair;
+        border-radius: 5px;
+      }
+      input[type="submit"] {
+        padding: 16px 32px;
+        font-size: large;
+        color: black;
+        border-radius: 15px;
+      }
+
+      input[type="text"] {
+        padding: 4px 8px;
+        font-size: medium;
+        color: black;
+        border-radius: 10px;
+      }
+    </style>
+  </head>
+  <body style="background-color: #171717">
+    <header>
+      <h1>Tinder</h1>
+    </header>
+    <form action="match.html">
+      <div class="containerForm">
+        <h2>Zadejte svoje jmeno</h2>
+        <label for="fname">Krestni jmeno:</label>
+        <input type="text" id="fname" name="fname" required />
+        <label for="lname">Prijmeni:</label>
+        <input type="text" id="lname" name="lname" required />
+      </div>
+
+      <div class="containerForm">
+        <h2>Vyberte profilovou fotku</h2>
+        <input type="file" name="soubor" required />
+      </div>
+
+      <div class="containerForm">
+        <h2>Zadejte svuj email</h2>
+        <label for="email">Email</label>
+        <input type="text" id="email" name="email" required />
+      </div>
+
+      <div class="containerForm">
+        <h2>Zadejte vase telefoni cislo</h2>
+        <label for="number">Telefon</label>
+        <input type="text" id="number" name="number" required />
+      </div>
+
+      <div class="containerForm">
+        <h2>Zadejte vase datum narozeni</h2>
+        <label for="birthday"></label>
+        <input type="date" id="birthday" name="birthday" required />
+      </div>
+
+      <div class="containerForm">
+        <h2>Zvolte vase pohlavi</h2>
+        <input type="radio" name="pohlavi" value="muz" />Muž
+        <input type="radio" name="pohlavi" value="zena" />Žena
+        <input type="radio" name="pohlavi" value="nevim" />Nevim
+      </div>
+
+      <div class="containerForm">
+        <h2>Zvolte vase zajmy</h2>
+        <input type="checkbox" name="zajmy[]" value="sport" />Sport
+        <input type="checkbox" name="zajmy[]" value="hudba" />Hudba
+        <input type="checkbox" name="zajmy[]" value="film" />Filmy
+        <input type="checkbox" name="zajmy[]" value="pocitave hry" />Pocitacove
+        hry <input type="checkbox" name="zajmy[]" value="alkohol" />Alkohol
+      </div>
+
+      <div class="containerForm">
+        <h2>Poznamky</h2>
+        <textarea name="poznamky" rows="4" cols="50"></textarea>
+      </div>
+
+      <div class="containerSubmit">
+        <input type="submit" value="Odeslat" class="submit_button" />
+      </div>
+    </form>
+  </body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TV dotaznik</title>
+    <style>
+      .grid {
+        display: grid;
+        grid-template-columns: 0.25fr 2fr;
+        grid-template-rows: auto;
+        grid-gap: 0px;
+        grid-column: span 2;
+      }
+      .grid > div {
+        padding: 10px;
+        text-align: left;
+      }
+    </style>
+  </head>
+  <body>
+    <header><h1>TV DOTAZNIK</h1></header>
+    <form method="post">
+      <div class="grid">
+        <div>Jmeno a prijmeni</div>
+        <div><input type="text" required /></div>
+        <div>Kolik vam je let?</div>
+        <div>
+          <input type="radio" name="vek" value="18" /> 18 a mene<br />
+          <input type="radio" name="vek" value="19" /> 19 az 64 <br />
+          <input type="radio" name="vek" value="65" /> 65 a vice<br />
+        </div>
+        <div>V jakych zarizenich sledujete TV?</div>
+        <div>
+          <input type="checkbox" name="tv[]" value="Televize" /> Televize<br />
+          <input type="checkbox" name="tv[]" value="Pocitac" /> Pocitac<br />
+          <input type="checkbox" name="tv[]" value="Mobil" /> Mobil<br />
+        </div>
+        <div>Co se vam libi na TV?</div>
+        <div><textarea name="libi" rows="4" cols="50" required></textarea></div>
+        <div>Jakou visi poplatku jste ochotni zaplatit?</div>
+        <div>
+          <label for="cena">Vyberte castku:</label>
+          <select id="cena" name="cena" required>
+            <option value="50aMin">Mene nez 50kc</option>
+            <option value="50az200">50kc az 200kc</option>
+            <option value="200aVic">Vice nez 200kc</option>
+          </select>
+        </div>
+        <div>
+          <input type="submit" value="Odeslat" />
+        </div>
+      </div>
+    </form>
+  </body>
+</html>

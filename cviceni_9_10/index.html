@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="cs">
+  <head>
+    <title>Anketní formulář</title>
+    <meta charset="utf-8" />
+    <style>
+      header {
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 10px;
+      }
+      h1 {
+        margin: 0;
+        color: aquamarine;
+      }
+      .container {
+        max-width: 1000px;
+        margin: 20px auto;
+        padding: 20px;
+        background-color: aquamarine;
+        border-radius: 5px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+      }
+
+      .submit_button {
+        text-align: center;
+        vertical-align: middle;
+        cursor: crosshair;
+        border-radius: 5px;
+      }
+    </style>
+  </head>
+  <body style="background-color: #333">
+    <header>
+      <h1>Anketní formulář</h1>
+    </header>
+    <form action="http://jecna.lmsoft.cz/form.php" method="post">
+      <table>
+        <tr>
+          <div class="container">
+            <h2>Zadejte svoje jmeno</h2>
+            <label for="fname">Krestni jmeno:</label><br />
+            <input type="text" id="fname" name="fname" /><br />
+            <label for="lname">Prijmeni:</label><br />
+            <input type="text" id="lname" name="lname" /><br />
+          </div>
+        </tr>
+        <tr>
+          <div class="container">
+            <h2>Zadejte svuj email</h2>
+            <label for="email">Email</label><br />
+            <input type="text" id="email" name="email" /><br />
+          </div>
+        </tr>
+        <tr>
+          <div class="container">
+            <h2>Zadejte vas vek</h2>
+            <label for="age">Vek</label>
+            <input type="text" id="age" name="age" /><br />
+          </div>
+        </tr>
+        <tr>
+          <div class="container">
+            <h2>Zvolte vase pohlavi</h2>
+            <input type="radio" name="pohlavi" value="muz" />Muž <br />
+            <input type="radio" name="pohlavi" value="zena" />Žena <br />
+            <input type="radio" name="pohlavi" value="nevim" />Nevim <br />
+          </div>
+        </tr>
+        <tr>
+          <div class="container">
+            <h2>Zvolte vase zajmy</h2>
+            <input type="checkbox" name="zajmy[]" value="sport" />Sport <br />
+            <input type="checkbox" name="zajmy[]" value="hudba" />Hudba <br />
+            <input type="checkbox" name="zajmy[]" value="film" />Filmy <br />
+            <input
+              type="checkbox"
+              name="zajmy[]"
+              value="pocitave hry"
+            />Pocitacove hry <br />
+            <input type="checkbox" name="zajmy[]" value="alkohol" />Alkohol
+            <br />
+          </div>
+        </tr>
+        <tr>
+          <div class="container">
+            <h2>Vyberte soubor</h2>
+            <input type="file" name="soubor" /> <br />
+          </div>
+        </tr>
+        <tr>
+          <div class="container">
+            <h2>Poznamky</h2>
+            <textarea name="poznamky" rows="4" cols="50"></textarea>
+          </div>
+        </tr>
+        <tr>
+          <div class="container">
+            <input type="submit" value="Odeslat" class="submit_button" />
+          </div>
+        </tr>
+      </table>
+    </form>
+  </body>
+</html>

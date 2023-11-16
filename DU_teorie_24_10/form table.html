@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    
+</head>
+<body>
+    <h1>TV dotazník</h1>
+    <form action="" method="post">
+
+        <table>
+            <tr>
+                <td>Jméno a pøijímení</td>
+                <td><input type="text" name="jmeno"></td>
+            </tr>
+            <tr>
+                <td>Kolik vám je let?</td>
+                <td>
+                    <input type="radio" name="vek" value="18"> 18 a ménì<br>
+                    <input type="radio" name="vek" value="19"> 19 až 64 <br>
+                    <input type="radio" name="vek" value="65"> 65 a více<br>
+                </td>
+            </tr>
+            <tr>
+                <td>V jakých zaøízení sledujete ÈT?</td>
+                <td>
+                    <input type="checkbox" name="tv[]" value="Televize"> Televize<br>
+                    <input type="checkbox" name="tv[]" value="Poèítaè"> Poèítaè<br>
+                    <input type="checkbox" name="tv[]" value="Mobil"> Mobil<br>
+                </td>
+            </tr>
+            <tr>
+                <td>Coo se vám líbí na tv?</td>
+                <td><textarea name="libi" rows="4" cols="50"></textarea></td>
+            </tr>
+            <tr>
+                <td>Jakou výši poplatkù jste ochotni platit</td>
+                <td>
+                    doplòtì vhodný formuláøový element
+                </td>
+            </tr>
+        </table>
+
+        <div>
+            <input type="submit" value="Odeslat">
+          </div>
+
+    </form>
+</body>
+</html>
+
+
